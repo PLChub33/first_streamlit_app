@@ -25,7 +25,7 @@ streamlit.dataframe(fruits_to_show)
 streamlit.header("Fruityvice Fruit Advice!")
 
 import requests
-
+fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 streamlit.text(fruityvice_response.json())
 
 # take thejson version of the response adn normalize it 
